@@ -1,0 +1,387 @@
+/* all codes and elements are organized by alphabetical order */
+/* class and ids are located under the universal CSS codes */
+/* media/transitions are located at the very end in descending size order */
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+* {
+    font-family: 'Gemunu Libre', sans-serif;
+    max-width: 100vw;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #A9F2FE;
+}
+
+em {
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #1B1D34;
+}
+
+header {
+    background-color: #1B1D34;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+h1 {
+    color: #1B1D34;
+    font-size: calc(40px + 0.390625vw);
+    font-weight: bolder;
+    padding: 5%;
+    text-decoration: underline;
+}
+
+hr {
+    width: 20%;
+}
+
+iframe {
+    height: 90vh;
+    margin-left: 5%;
+    margin-top: 9vh;
+    top: 15vh;
+    width: 90%;
+}
+
+input {
+    border: solid #4b00ff;
+    color: #4b00ff;
+    font-size: calc(15px + 0.390625vw);
+    height: calc(22px + 0.390625vw);
+    padding: 1%;
+    width: 15vw;   
+}
+
+img[class="social"] {
+    height: 5vh;
+    margin: 5%;
+}
+
+img[alt="Logo2"] {
+    padding-top: 3%;
+}
+
+li {
+    float: left;
+    font-size: calc(15px + 0.390625vw);
+    padding: 1%;
+}
+
+li a {
+    color: #AAAAEE;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #4b00ff;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+p {
+    color: #4b00ff;
+    font-family: 'Kanit', sans-serif;
+    font-size: calc(12px + 0.390625vw);
+}
+
+ul {
+    list-style-type: none;
+}
+  
+
+
+/* class */
+.carousel {
+    float: left;
+    margin: 2%;
+    padding-bottom: 10%;
+    padding-top: 10%;   
+    overflow: visible;
+    width: 20%;
+}
+
+.dropbtn {
+    border-color: #4b00ff;
+    visibility: hidden;
+
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: #AAAAEE;
+    display: none;
+    position: absolute;
+    min-width: max-content;
+    visibility: hidden;
+}
+  
+.dropdown-content a {
+    color:#1B1D34;
+    display: block;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {background-color: aliceblue;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: aliceblue;}
+
+.icon {
+    height: calc(12px + 0.390625vw);
+    width: auto;
+}
+
+.left {  
+    float: left;
+    padding-left: 2%;
+    width: 45vw;
+}
+
+.leftborder {
+    float: left;
+}
+
+.logo {
+    float: left;
+    height: 10vh;
+}
+
+.profile {
+    height: auto;
+    width: 20vw;
+}
+
+.right {
+    float: right;
+    height: 40vh;
+    overflow: scroll;
+    padding-right: 2%;
+    width: 45vw;
+}
+
+.rightborder {
+    float: right;
+}
+
+.search {
+    background-color: white;
+    border: #4b00ff;
+    border-style: solid;
+}
+
+/* id */
+#banner1 {
+    padding-top: 10%;
+    width: 100%;
+}
+
+#banner2 {
+    width: 100%;
+}
+
+#form {
+    float: right;
+    padding-right: 5vw;
+    margin-top: 0.5vw;
+}
+
+#introduction {
+    background-color: aliceblue;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#members {
+    background-color: #AAAAEE;
+    font-size: calc(30px + 0.390625vw);
+    text-align: center;
+}
+
+#members a {
+    color:#1B1D34;
+    display: block;
+    text-decoration: none;
+}
+
+#members a:hover {
+    color: #4b00ff;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* media quries */
+/* large tablets in landscape mode can use a similar interface as the desktop/standard */
+
+@media screen and (max-height: 540px) and (orientation: landscape){ /* phones being held in landscape mode */
+    footer {
+        text-align: center;
+    }
+
+    header {
+        margin-left: -1%;
+        position: static;
+        text-align: center;
+    }
+
+    iframe {
+        height: 80vh;
+        margin-top: 0;
+        max-width: 100vw;
+    }
+
+    nav {
+        background-color: #1B1D34;
+        padding-top: 2%;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+
+    /* class */
+    .carousel { 
+        width: 90vw;
+    }
+
+    .left {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .logo {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10Ivw;
+    }
+
+    .right {
+        float: none;
+        height: fit-content;
+        overflow: auto;
+        padding: 5%;
+        width: 90%;
+    }
+}
+
+@media screen and (orientation: portrait){ /* all items held portrait mode, specifically tablets */
+    footer {
+        text-align: center;
+    }
+
+    header {
+        margin-left: -1%;
+        position: static;
+        text-align: center;
+    }
+    
+    iframe {
+        height: 80vh;
+        margin-left: -1%;
+        margin-top: 0;
+        width: 100vw;
+    }
+
+    nav {
+        background-color: #1B1D34;
+        padding-top: 2%;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        
+    }
+
+
+    /* class */
+    .carousel { 
+        margin: 5%;
+        width: 40%;
+    }
+
+    .left {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .logo {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 7vh;
+    }
+
+    .profile {
+        width: 40vw;
+    }
+
+    .right {
+        float: none;
+        height: fit-content;
+        overflow: auto;
+        padding: 5%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) and (orientation: portrait){ /* mobile devices in portrait mode */
+    header {
+        height: fit-content;
+        position: fixed;
+        top: 0;
+        text-align: right;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    form {
+        display: none;
+    }
+
+    iframe {
+        margin-top: 22%;
+        margin-left: -2%;
+        height: 40vh;
+    }
+    
+    ul {
+        display: none;
+    }
+
+    /* class */
+    .carousel { 
+        width: 90vw;
+    }
+
+    .dropbtn {
+        margin-right: 25vw;
+        visibility: visible;
+    }
+    
+    .dropdown-content {
+        visibility: visible;
+    }
+
+    .logo {
+        float: left;
+        padding-top: 3%;
+        margin: none;
+    }
+}

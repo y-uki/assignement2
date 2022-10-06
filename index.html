@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Yuki Chen">
+        <title>Individual Assignment 2</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+
+    <body>
+        <header> 
+            <img class=logo src="images/KDA_Logo.jpg" alt="Logo1"> <!--logo-->
+
+            <nav>  
+                <ul> <!--navigation menu items, internal and external references-->
+                    <li> <a href="#members"> Member Profile </a> </li>  
+                    <li> <a href="https://genius.com/artists/K-da" target="_blank"> Music </a> </li>  
+                    <li> <a href="https://en.wikipedia.org/wiki/K/DA#Awards_and_nominations" target="_blank"> Accomplishments </a> </li>  
+                    <li> <a href="https://merch.riotgames.com/en-us/collection/kda-allout-collection/" target="_blank"> Merchandise </a> </li>  
+                </ul>  
+                <form id="form"> <!--search bar-->
+                    <input type="search" id="query" name="query" placeholder="Search...">
+                    <button class="search"> <img class="icon" src="images/search.png" alt="Search Icon"> </button>
+                </form> 
+
+                <div class="dropdown"> <!--hamburger menu for mobile users-->
+                    <button class="dropbtn"> <img class="icon" src="images/hamburger.png" alt="Hamburger Menu"> </button>
+                    <div class="dropdown-content">
+                        <a href="#members"> Member Profile </a>
+                        <a href="https://genius.com/artists/K-da" target="_blank"> Music </a>
+                        <a href="https://en.wikipedia.org/wiki/K/DA#Awards_and_nominations" target="_blank"> Accomplishments </a>  
+                        <a href="https://merch.riotgames.com/en-us/collection/kda-allout-collection/" target="_blank"> Merchandise </a>
+                    </div>
+                  </div>
+            </nav>
+
+            
+        </header>
+
+
+        <div id="video"> <!--main video-->
+            <iframe src="https://www.youtube.com/embed/RkID8_gnTxw?autoplay=1&mute=1&playlist=RkID8_gnTxw&loop=1" allowfullscreen> </iframe>
+        </div> <!--autoplay, mute, and loop video-->
+
+        <div id="introduction"> <!--who are we?-->
+            <h1> Who are we? </h1>
+            <img src="images/KDA_Group.jpg" alt="KDA All Out Group" class="left">   
+            <div class="right">
+                <hr class="leftborder"> <!--decorative border-->
+                <p> 
+                    K/DA is a virtual K-Pop group released by Riot Games in 2018. The group stars four champions from the company's most popular game, 
+                    League of Legends: <em> Ahri the lead singer, Akali the rapper, Evelynn the vocalist, and Kai'Sa, the main dancer. </em>
+                </p>
+                <p>
+                    The name K/DA is an acronym for the words Kills, Deaths, and Assists. It is a common term used in League of Legends to quantify the 
+                    performance of the player in game. The original purpose of creating such a group was to promote the League of Legends World Championship 
+                    and increase sales of in game skins/costumes. Their first single "POP/STARS" received a lot of attention and praises; the music video 
+                    currently has over 500 million views on YouTube. Since then, K/DA have been a recurring guest for the League of Legends Championship 
+                    Opening Ceremonies; Riot has been able to use holographics to project them on stage and create a <em>live</em> performance for the audience.                
+                </p>
+                <p>
+                    Their most recent work was an EP under the name "All Out." It was released in 2020 and consists of five songs: <em> "THE BADDEST", "MORE", 
+                    "VILLIAN", "DRUM GO DUM", </em> and <em> "I'LL SHOW YOU" </em>.
+                </p>
+                <hr class="rightborder"> <!--decorative border-->
+            </div>
+        
+            <img src="images/KDA_Banner (2).jpg" alt="K/DA 2" id="banner1">
+        </div>
+
+
+        <div id="members">
+            <div class="carousel"> <!--carousel transitions are only for mobile-->
+                <img src="images/ahri.jpg" alt="Ahri" class="profile"> <!--member 1-->
+                <a href="https://kda-lol.fandom.com/wiki/Ahri" target="_blank"> Ahri </a>
+            </div>
+
+            <div class="carousel"> <!--member 2-->
+                <img src="images/akali.jpg" alt="Akali" class="profile">
+                <a href="https://kda-lol.fandom.com/wiki/Akali" target="_blank"> Akali </a>
+            </div>
+
+            <div class="carousel"> <!--member 3-->
+                <img src="images/evelynn.jpg" alt="Evelynn" class="profile">
+                <a href="https://kda-lol.fandom.com/wiki/Evelynn" target="_blank"> Evelynn </a>
+            </div>
+
+            <div class="carousel"> <!--member 4-->
+                <img src="images/kai'sa.jpg" alt="Kai'Sa" class="profile">
+                <a href="https://kda-lol.fandom.com/wiki/Kai%27Sa" target="_blank"> Kai'Sa </a>
+            </div>
+            <img src="images/KDA_Banner (2).jpg" alt="K/DA 2" id="banner2">
+        </div>
+
+
+        <footer>
+            <img class=logo src="images/KDA_Logo.jpg" alt="Logo2"> <!--logo-->
+
+            <a href="https://www.instagram.com/kda_music/" target="_blank"> <!--K/DA Instagram-->
+                <img src="images/instagram.png" alt="Instagram" class="social">
+            </a>
+
+            <a href="https://twitter.com/KDA_MUSIC" target="_blank"> <!--K/DA Twitter-->
+                <img src="images/twitter.png" alt="Twitter" class="social">
+            </a>
+
+            <a href="https://www.tiktok.com/@kda_music?lang=en" target="_blank"> <!--K/DA Tik Tok-->
+                <img src="images/tiktok.png" alt="Tik Tok" class="social">
+            </a>
+
+            <a href="https://soundcloud.com/leagueoflegends" target="_blank"> <!--K/DA Soundcloud-->
+                <img src="images/soundcloud.png" alt="Soundcloud" class="social">
+            </a>
+        </footer>
+    </body>
+</html>
